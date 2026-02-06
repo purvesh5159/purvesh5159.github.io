@@ -1,72 +1,77 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #020617;
-  color: #e5e7eb;
+  color: #222;
+  background: #fff;
   line-height: 1.6;
 }
 
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.nav {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
 .hero {
-  padding: 80px 20px;
+  background: #f5f7fa;
+  padding: 70px 0;
   text-align: center;
-  background: linear-gradient(135deg, #020617, #020617);
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-}
-
-.hero h2 {
-  margin-top: 10px;
-  font-weight: 400;
-  color: #38bdf8;
+.hero h1 span {
+  color: #007bff;
 }
 
 .hero p {
-  margin-top: 20px;
   max-width: 700px;
-  margin-inline: auto;
-  color: #cbd5f5;
+  margin: 15px auto;
+  color: #555;
 }
 
-.hero-buttons {
-  margin-top: 30px;
-}
-
-.hero-buttons a {
-  text-decoration: none;
-  padding: 12px 22px;
-  margin: 5px;
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #007bff;
+  color: #fff;
   border-radius: 6px;
-  background: #38bdf8;
-  color: #020617;
+  text-decoration: none;
   font-weight: 600;
 }
 
-.hero-buttons .secondary {
-  background: transparent;
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-}
-
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+  padding: 60px 0;
 }
 
-.section h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.section.dark {
-  background: #020617;
+.light {
+  background: #f9fafb;
 }
 
 .grid {
@@ -75,18 +80,23 @@ body {
   gap: 20px;
 }
 
-.card {
-  background: #020617;
-  border: 1px solid #1e293b;
+.box {
+  border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  border-radius: 6px;
 }
 
-.card span {
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.project span {
   display: block;
   margin-top: 10px;
-  color: #38bdf8;
+  color: #007bff;
   font-size: 0.9rem;
 }
 
@@ -95,39 +105,27 @@ form {
   margin: auto;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
-  background: #020617;
-  border: 1px solid #1e293b;
-  color: #e5e7eb;
+  border: 1px solid #ccc;
   border-radius: 6px;
-}
-
-textarea {
-  min-height: 120px;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background: #38bdf8;
+  background: #007bff;
+  color: #fff;
   border: none;
   border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
 }
 
-#status {
-  margin-top: 10px;
-  font-size: 0.9rem;
-}
-
-footer {
+.footer {
   text-align: center;
   padding: 20px;
-  border-top: 1px solid #1e293b;
-  color: #94a3b8;
+  border-top: 1px solid #eee;
+  color: #666;
 }
