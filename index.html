@@ -3,140 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Purvesh Ramoliya | Senior PHP Developer</title>
-
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- EmailJS -->
+  <title>Purvesh Ramoliya | Senior PHP & Laravel Developer</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
 
-<!-- ================= HERO ================= -->
-<header class="hero">
-  <h1>Purvesh Ramoliya</h1>
-  <h2>Senior PHP & Laravel Developer | Team Lead</h2>
-  <p>
-    9+ years of experience building scalable enterprise & SaaS applications
-    across Healthcare, Government, and E-commerce domains.
-  </p>
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-flex">
+    <div class="logo">Purvesh Ramoliya</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <div class="hero-buttons">
-    <a href="#projects">View Projects</a>
-    <a href="#contact" class="secondary">Contact Me</a>
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <h1>Hello, I’m <span>Purvesh</span></h1>
+    <p>
+      Senior PHP & Laravel Developer / Team Lead with 9+ years of experience
+      building enterprise-grade and multi-tenant SaaS platforms across
+      Healthcare, Government, and E-Commerce domains.
+    </p>
+    <a href="#contact" class="btn">Let’s Work Together</a>
   </div>
 </header>
 
-<!-- ================= ABOUT ================= -->
-<section class="section">
-  <h3>About Me</h3>
+<!-- ABOUT -->
+<section id="about" class="section container">
+  <h2>About Me</h2>
   <p>
     I am a Senior PHP Developer and Team Lead with strong expertise in Core PHP,
-    Laravel, REST APIs, and scalable backend architecture. I specialize in
-    building secure, high-performance applications and mentoring teams to
-    deliver clean, maintainable code.
+    Laravel, RESTful APIs, and scalable backend architecture. I have led the
+    end-to-end development of 20+ enterprise and SaaS applications, focusing on
+    performance, security, and long-term maintainability.
+  </p>
+  <p>
+    I enjoy solving complex backend problems, optimizing systems (35–45%
+    performance improvement), and mentoring developers in Agile, remote-first
+    environments.
   </p>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section class="section dark">
-  <h3>Skills</h3>
-
-  <div class="grid">
-    <div>
-      <h4>Backend</h4>
-      <p>PHP, Core PHP, Laravel, REST APIs, Node.js</p>
-    </div>
-
-    <div>
-      <h4>Frontend</h4>
-      <p>JavaScript, TypeScript, Vue.js, React</p>
-    </div>
-
-    <div>
-      <h4>Databases</h4>
-      <p>MySQL, PostgreSQL, MongoDB</p>
-    </div>
-
-    <div>
-      <h4>DevOps</h4>
-      <p>Git, CI/CD, Docker, AWS, Azure</p>
+<!-- SKILLS -->
+<section id="skills" class="section light">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="box">
+        <h4>Backend</h4>
+        <p>PHP, Core PHP, Laravel, REST APIs, Node.js</p>
+      </div>
+      <div class="box">
+        <h4>Frontend</h4>
+        <p>JavaScript, TypeScript, Vue.js, React</p>
+      </div>
+      <div class="box">
+        <h4>Databases</h4>
+        <p>MySQL, PostgreSQL, MongoDB</p>
+      </div>
+      <div class="box">
+        <h4>DevOps</h4>
+        <p>Git, CI/CD, Docker, AWS, Azure</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section class="section" id="projects">
-  <h3>Projects</h3>
+<!-- PROJECTS -->
+<section id="projects" class="section container">
+  <h2>Key Projects</h2>
 
-  <div class="card">
-    <h4>COMFOLD – Enterprise CRM</h4>
+  <div class="project">
+    <h3>COMFOLD – Enterprise CRM & Operations Platform</h3>
     <p>
-      Multi-tenant CRM platform covering quotations, inventory, invoicing,
-      and customer support.
+      Designed and developed a multi-tenant enterprise CRM covering quotation
+      management, inventory control, project tracking, invoicing, and customer
+      support. The platform centralized operations across departments and
+      significantly reduced quotation turnaround time.
     </p>
-    <span>Core PHP • MySQL • REST APIs • SaaS</span>
+    <span>Core PHP • MySQL • REST APIs • SaaS • CI/CD</span>
   </div>
 
-  <div class="card">
-    <h4>GST Office – Call Center Management</h4>
+  <div class="project">
+    <h3>GST Office – Government Call Center Management System</h3>
     <p>
-      Government-grade system supporting 30+ agents with Hybrid IVR
-      and real-time dashboards.
+      Built a government-grade call center system supporting 30+ concurrent
+      agents with Hybrid IVR (Asterisk), custom ticket workflows, and real-time
+      performance dashboards. Ensured high availability and secure operations.
     </p>
-    <span>PHP • MySQL • Asterisk IVR</span>
+    <span>PHP • MySQL • Asterisk IVR • Security Optimization</span>
   </div>
 
-  <div class="card">
-    <h4>Zwarra Healthcare</h4>
+  <div class="project">
+    <h3>Nikon – Photographer Product Booking Portal</h3>
     <p>
-      Appointment booking, lab tests, payments, and secure patient dashboards.
+      Developed a booking platform for professional photographers to reserve,
+      review, and return newly launched Nikon products. Integrated the system
+      with Nikon’s internal CRM for inventory tracking and feedback analysis.
     </p>
-    <span>Laravel • React • REST APIs</span>
+    <span>Laravel • Core PHP • MySQL • CRM Integration</span>
+  </div>
+
+  <div class="project">
+    <h3>BEML – Customer Complaint Handling System</h3>
+    <p>
+      Delivered a customer complaint management platform with CRM backend,
+      mobile app integration, and real-time dashboards to monitor resolution
+      metrics and service performance.
+    </p>
+    <span>Laravel • REST APIs • Dashboards • CI/CD</span>
+  </div>
+
+  <div class="project">
+    <h3>IIT Madras – Campus Complaint Management Platform</h3>
+    <p>
+      Designed and deployed a campus-wide system enabling students and staff to
+      log, track, and resolve issues through mobile and web applications with
+      role-based workflows.
+    </p>
+    <span>Laravel • React • Vue.js • REST APIs</span>
+  </div>
+
+  <div class="project">
+    <h3>JustO – B2B E-Commerce Platform</h3>
+    <p>
+      Built a B2B e-commerce platform integrated with CRM and mobile apps.
+      Developed React-based dashboards and optimized backend APIs for order
+      management and payment processing.
+    </p>
+    <span>Laravel • React • Vue.js • Payment Gateway</span>
+  </div>
+
+  <div class="project">
+    <h3>Zwarra Healthcare – Healthcare Management Portal</h3>
+    <p>
+      Developed a healthcare portal for appointments, lab bookings, payments,
+      and notifications with secure patient dashboards and healthcare-compliant
+      data handling.
+    </p>
+    <span>Laravel • React • REST APIs • Healthcare Compliance</span>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section class="section dark" id="contact">
-  <h3>Contact Me</h3>
-
-  <form id="contact-form">
-    <input type="text" name="from_name" placeholder="Your Name" required />
-    <input type="email" name="from_email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-    <p id="status"></p>
-  </form>
+<!-- CONTACT -->
+<section id="contact" class="section light">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="status"></p>
+    </form>
+  </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <p>© 2026 Purvesh Ramoliya • Surat, India</p>
+<footer class="footer">
+  <p>© 2026 Purvesh Ramoliya • Senior PHP & Laravel Developer</p>
 </footer>
 
-<!-- ================= EMAILJS SCRIPT ================= -->
 <script>
-  (function () {
-    emailjs.init("KFtAYFwjSNGLet_9H"); // 🔴 replace
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY");
   })();
 
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
+  document.getElementById("contact-form").addEventListener("submit", function(e){
     e.preventDefault();
-
     emailjs.sendForm(
-      "service_k4guu",   // 🔴 replace
-      "template_lnntxdg",  // 🔴 replace
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
       this
-    ).then(
-      function () {
-        document.getElementById("status").innerText =
-          "✅ Message sent successfully!";
-      },
-      function () {
-        document.getElementById("status").innerText =
-          "❌ Failed to send message. Try again.";
-      }
-    );
+    ).then(() => {
+      document.getElementById("status").innerText = "Message sent successfully!";
+    }, () => {
+      document.getElementById("status").innerText = "Failed to send message.";
+    });
   });
 </script>
 
